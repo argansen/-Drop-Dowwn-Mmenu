@@ -1,0 +1,65 @@
+*{ padding: 0px; margin: 0px; box-sizing: border-box;}
+a{text-decoration: none;}
+ul,li{ list-style: none;}
+/* basic css ends */
+div{ background-color: powderblue;}
+.div2{ background-color: azure; text-align: center; padding: 25px;}
+nav{ background-color: powderblue; width: 80%; margin: auto; 
+    text-align: center;}
+    /* nav ul{display:flex;} */
+nav ul li{display: inline-block; position: relative;}
+nav ul li a{ display: block; padding: 30px; font-family: arial; font-size: 25px; font-weight: 500; 
+     transition: 0.8s; position: relative;z-index: 1;}
+nav ul li:hover > a{color:darkorange;}  
+/* befor after contentt */
+/* nav ul li a::before{content: ""; width: 0px; height:100%;position: absolute;background-color: rgb(17, 13, 17);
+ bottom: 0px; left: 0px; height:0; width: 100%; z-index:-1; transition: 1s;} 
+ nav ul li:hover a::before{ height: 100%;} */
+
+ nav ul li a::before{content: ""; width:0%; height: 50%; background-color: black; position: absolute; z-index: -1;
+    top:0; left: 0; transition: 0.6s;}
+    nav ul li:hover > a::before{width: 100%; font-size: 30px;}
+    nav ul li a::after{content: ""; width:100%; height: 0%; background-color: black; position: absolute; z-index: -1;
+        bottom:0; left: 0; transition: 0.4s;}
+        nav ul li:hover > a::after{ height: 50%;}
+
+        nav ul li ul{position: absolute; opacity: 0; visibility: hidden; transition: 0.8s; margin-top: 30px;
+            background-color: rgb(224, 10, 142);}
+        nav ul li:hover > ul{opacity: 1; visibility:visible ; margin-top: 0;}
+        nav ul li ul li{ display: block; width: 160px; }
+       nav ul li ul li a::before,
+       nav ul li ul li a::after{display: none;}
+       nav ul li ul li:hover > a{background-color: lightcyan; color: black;}
+
+
+       nav ul li ul li ul{left: 170px; top: 0px;background-color: blueviolet; text-align: left;
+        opacity: 0;visibility: hidden;} 
+        nav ul li ul li ul li{width: 150px;text-align: center;}
+        /* nav ul li ul li ul:hover li{ background-color: rgb(12, 201, 37);} */
+        nav ul li ul li ul li a{color: gold;transition: 2s; background-color: darkgrey;}
+      nav ul li ul li ul li:hover > a{background-color:orangered;} 
+      nav ul li ul li ul li ul{ background-color: azure;} 
+       nav ul li ul li ul li ul li a{background-color:darkslateblue; border-radius: 40px; margin-bottom: 10px;} 
+       nav ul li ul li ul li ul li:hover a{ background-color: greenyellow;}
+       
+     .a{background-color: tomato;}
+     .b{background-color: tomato;}
+     .c{background-color: brown;}
+     
+
+     h1{ color: navy; font-size: 30px;}
+     span{ color:mediumvioletred; font-size: 37px; font-weight: bold;} 
+
+     img{ display:inline-block; text-align: center; height: 50px; margin-right: 20px; margin-left: 80px; border-radius: 50%; }
+     nav{display: inline-block;}
+     
+
+
+     
+      
+     
+
+
+
+    
+          
